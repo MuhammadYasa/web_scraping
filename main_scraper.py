@@ -12,8 +12,7 @@ popular_area = bsoup.find(attrs={'class' : 'grid-row list-content'}) # hanya are
 titles = popular_area.find_all(attrs={'class' : 'media__title'}) #find.all = digunakan untuk mencari semua element yg mempunyai atribute tertentu
 # class yg diambil adalah class media title / judul dari artikel
 
-
-images = popular_area.find_all(attrs={'class' : 'media__image'})
+images = popular_area.find_all(attrs={'class' : 'media__image'}) # mengambil semua class dari media image
 
 # untuk menampilkan title, berupa textnya saja tanpa url nya
 # for title in titles:
